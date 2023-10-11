@@ -4,9 +4,9 @@
 
 import re
 
-five_word_input = input("Enter five words separated by comma: ")
-five_word_input = re.sub(" ","", five_word_input)
-list_of_words = five_word_input.split(",")
+words_input = input("Enter five or more words separated by comma: ")
+words_input = re.sub(" ","", words_input)
+list_of_words = words_input.split(",")
 word_counter = len(list_of_words)
 
 if word_counter < 5:
